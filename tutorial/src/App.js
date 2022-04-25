@@ -33,7 +33,7 @@ const App = () => {
   const [expenses, setExpenses] = useState([]);
 
   const fetchData = () => {
-    fetch("https://yexpense.herokuapp.com/api/v1/expenses/api/v1/expenses")
+    fetch("https://yexpense.herokuapp.com/api/v1/expenses")
       .then((response) => {
         if (response.ok) {
           return response.json();
